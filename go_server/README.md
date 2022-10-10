@@ -23,7 +23,7 @@ CC=x86_64-linux-musl-gcc CXX=x86_64-linux-musl-g++ GOARCH=amd64 GOOS=linux CGO_E
 
 ## Systemd
 
-Copy `mbtiles_server_go.service` to `/lib/systemd/system`
+Copy `mbtiles_poland_go_server.service` to `/lib/systemd/system`
 
 Start service
 
@@ -40,5 +40,5 @@ sudo systemctl enable mbtiles_server_go
 Getting logs
 
 ```bash
-sudo journalctl -u mbtiles_server_go.service -f
+sudo journalctl -u mbtiles_poland_go_server.service -f
 ```
