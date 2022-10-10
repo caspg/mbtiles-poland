@@ -8,8 +8,8 @@ cd mbtiles_scripts
 bash generate_poland_bike_infra_mbtiles.sh
 
 cd ..
-rm bike_infra.mbtiles
-mv bike_infra.tmp.mbtiles bike_infra.mbtiles
+rm -f data/bike_infra.mbtiles
+mv data/bike_infra.tmp.mbtiles data/bike_infra.mbtiles
 
 # full path to `service` is required. To find path run `which service`.
 /usr/sbin/service mbtiles_poland_go_server restart

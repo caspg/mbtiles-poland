@@ -42,4 +42,5 @@ OSM_CONFIG_FILE=./config/osmconf_bike_infra.ini ogr2ogr -f GeoJSON ../tmp/out.ge
 
 # `-z14`: Only generate zoom levels 0 through 14
 # `-l`: layer name
-tippecanoe --force -z14 -o ../data/bike_infra.tmp.mbtiles -l default --drop-fraction-as-needed ../tmp/out.geojson
+# To find path run `which tippecanoe`
+/usr/local/bin/tippecanoe --force -z14 -o ../data/bike_infra.tmp.mbtiles -l default --drop-fraction-as-needed ../tmp/out.geojson
