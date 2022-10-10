@@ -73,7 +73,6 @@ sudo journalctl -u mbtiles_poland_go_server.service -f
   proxy_set_header X-Forwarded-Port  $server_port;
   proxy_set_header Host              $host;
 
-  #proxy_cache tilecache;
   proxy_pass http://127.0.0.1:6060;
 }
 ```
