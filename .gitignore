@@ -2,3 +2,5 @@
 
 tmp/*
 data/*
+
+go_server/go_server
