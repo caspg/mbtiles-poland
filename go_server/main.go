@@ -31,7 +31,7 @@ func main() {
 	router.GET("/mbtiles/ping", pingHandler)
 	router.GET("/mbtiles/:z/:x/:y", tileHandler)
 
-	router.Run(":5050")
+	router.Run(":6060")
 }
 
 func ConnectDatabase() error {
