@@ -1,5 +1,5 @@
 [Unit]
-Description=mbtiles_server_go
+Description=mbtiles_poland_go_server
 
 [Service]
 Type=simple

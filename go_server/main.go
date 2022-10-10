@@ -42,7 +42,7 @@ func ConnectDatabase() error {
 	}
 
 	dir_path := path.Dir(ex_path)
-	db_path := path.Join(dir_path, "..", "data", "bike_infra.mbtiles.mbtiles")
+	db_path := path.Join(dir_path, "..", "data", "bike_infra.mbtiles")
 
 	println(db_path)
 
