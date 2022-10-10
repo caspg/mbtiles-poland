@@ -6,7 +6,7 @@ Type=simple
 Environment="GIN_MODE=release"
 Restart=always
 RestartSec=5s
-ExecStart=/home/caspg/mbtiles-poland/go_server/go_server_linux_x86_64
+ExecStart=/home/<USER_NAME>/mbtiles-poland/go_server/go_server_linux_x86_64
 
 [Install]
 WantedBy=multi-user.target

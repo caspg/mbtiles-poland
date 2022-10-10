@@ -11,7 +11,7 @@ sudo crontab -e
 Run command every night at 02:00 UTC
 
 ```
-0 2 * * * bash /home/caspg/mbtiles-poland/regenerate_bike_infra_mbtiles.sh > /home/caspg/mbtiles-poland/logs/regenerate_bike_infra_mbtiles.log 2>&1
+0 2 * * * bash /home/<USER_NAME>/mbtiles-poland/regenerate_bike_infra_mbtiles.sh > /home/<USER_NAME>/mbtiles-poland/logs/regenerate_bike_infra_mbtiles.log 2>&1
 ```
 
 cron logs
