@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Starting generating Poland bike infra mbtiles"
+echo $(date +'%Y-%m-%d %H:%M %Z')
+
 # https://stackoverflow.com/a/24112741/4490927
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 cd "$parent_path"
