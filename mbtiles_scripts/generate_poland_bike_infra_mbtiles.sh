@@ -15,6 +15,9 @@ mkdir ../tmp
 curl https://download.geofabrik.de/europe/poland-latest.osm.pbf -o ../tmp/input.osm.pbf
 # curl https://download.geofabrik.de/europe/poland/pomorskie-latest.osm.pbf -o ../tmp/input.osm.pbf
 
+# log debug data
+osmium fileinfo ../tmp/input.osm.pbf
+
 osmium tags-filter ../tmp/input.osm.pbf \
   w/highway=cycleway \
   w/bicycle=designated \
