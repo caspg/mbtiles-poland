@@ -16,3 +16,5 @@ mv data/bike_infra.tmp.mbtiles data/bike_infra.mbtiles
 echo "restarting mbtiles_poland_go_server service"
 # full path to `service` is required. To find path run `which service`.
 /usr/sbin/service mbtiles_poland_go_server restart
+
+echo $(date +'%Y-%m-%d %H:%M %Z') > public/infra_update_date.txt
