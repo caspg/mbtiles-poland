@@ -19,3 +19,19 @@ cron logs
 ```bash
 sudo grep CRON /var/log/syslog
 ```
+
+## Expose update timestamp in nginx
+
+```nginx
+location /mbtiles/infra/updated-at.txt {
+  add_header Access-Control-Allow-Origin *;
+  add_header Cache-Control 'no-store, no-cache';
+
+  alias /home/caspg/mbtiles-poland/public/infra_update_date.txt;
+}
+
+```
+
+```bash
+sudo systemctl restart nginx
+```
